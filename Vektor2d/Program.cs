@@ -21,6 +21,8 @@ namespace Vektor2d
 			a.Osszead3(b);
 			Console.WriteLine($"{a.X} {a.Y}");
 
+			Console.WriteLine(a.HajlasSzog(b));
+
 			Console.ReadKey();
 		}
 	}

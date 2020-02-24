@@ -37,5 +37,13 @@ namespace Vektor2d
 			X = X + masik.X;
 			Y = Y + masik.Y;
 		}
+		public double HajlasSzog(Vektor masik)
+		{
+			double szamlalo = X * masik.X + Y * masik.Y;
+			double nevezo = Math.Sqrt(Math.Pow(X, 2) + Math.Pow(Y, 2))*
+										Math.Sqrt(Math.Pow(masik.X, 2) + Math.Pow(masik.Y, 2));
+
+			return szamlalo / nevezo;
+		}
 	}
 }
